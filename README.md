@@ -12,8 +12,11 @@ Normally in a react app you have an `App.js` or whatever at your root, with the 
 Gatsby doesn't have a place where you can do this as its all static, however I found [this](https://www.gatsbyjs.org/packages/gatsby-plugin-layout/#gatsby-plugin-layout) - you can acheive the same thing without the plugin, but this just makes it way way way easier. I'll install that too for you.
 
 Basically, check out `layouts/index.js` and in there you'll see we're wrapping the whole app in `ThemeProvider` (more on that in a second) and then rendering `<GlobalStyles>` from `styles/global.js`
+as an example - in the stream blog, I also render the header and footer in there so that it never re-renders between page changes which can be niiiiice for animations.
 
 ## Other fun shit:
 
-- So first up out of the gate - I installed `gatsby-plugin-styled-components` - check out `gatsby-config.js`. It doesn't need any config to kick off with however, because gatsby is SSR it will make sure that you're style definitions get pull in when its generating the static html & css files (this is specific to styled-components - and its a bitch to do if you do SSR without gatsby)
--
+So first up out of the gate - I installed `gatsby-plugin-styled-components` - check out `gatsby-config.js`. It doesn't need any config to kick off with however, because gatsby is SSR it will make sure that you're style definitions get pull in when its generating the static html & css files (this is specific to styled-components - and its a bitch to do if you do SSR without gatsby)
+
+Next, `gatsby-plugin-module-resolver`
+Everybody hates doing this `../../../../components/Header` obviously haha - here's how you fix it in [gatsby](https://www.gatsbyjs.org/packages/gatsby-plugin-module-resolver/) check out gatsby-config - should make sense but let me know.
