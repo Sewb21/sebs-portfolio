@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 
 // Styles //
-import styled, { ThemeProvider } from "styled-components"
+import { ThemeProvider } from "styled-components"
 import theme from "styles/theme"
 import GlobalStyle from "styles/global"
 
