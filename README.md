@@ -173,7 +173,7 @@ export default Button
 
 ## Git
 To get this on your machine and ready to do the following:
-- `git pull origin https://github.com/LukeSmetham/for-seb.git sebs-portfolio
+- `git clone https://github.com/LukeSmetham/for-seb.git sebs-portfolio`
 - The above will pull it down and set the directory name to `sebs-portfolio` (make sure you rename the old one first if your in the same folder)
 - Then run `git remote remove origin`
 - and then `git remote add origin https://github.com:Sewb21/sebs-portfolio.git`
