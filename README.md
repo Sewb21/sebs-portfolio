@@ -8,7 +8,7 @@ So this is where its gets _slightly_ hairy, I discovered an issue when I was wor
 
 Anyway, turns out there is a feature in gatsby that is rarely mentioned in the docs anywhere. no need to over-do it and go into exactly how it works but the essentials are this:
 
-Normally in a react app you have an `App.js` or whatever at your root, with the `Router` in it - and from there you can use context to wrap the entire app. This is also the best place to render your `GlobalStyles` component.
+Normally in a react app you have an `App.js` or whatever at your root, with the `Router` in it - and from there you can use context to wrap the entire app. This is also the best place to render your `GlobalStyles` component or `import './index.css';` etc.
 Gatsby doesn't have a place where you can do this as its all static, however I found [this](https://www.gatsbyjs.org/packages/gatsby-plugin-layout/#gatsby-plugin-layout) - you can acheive the same thing without the plugin, but this just makes it way way way easier. I'll install that too for you.
 
 Basically, check out `layouts/index.js` and in there you'll see we're wrapping the whole app in `ThemeProvider` (more on that in a second) and then rendering `<GlobalStyles>` from `styles/global.js`
