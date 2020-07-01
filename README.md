@@ -117,3 +117,55 @@ so, as a sentence, the css behaves like this:
 > If Root has two children, make the second child have a left margin of 16px
 
 and now, if you don't give it an icon, all is good 😎
+
+Okay sorry, THIS is the best thing about SC.
+
+All props are available inside the sc definitions AND so is your theme (I put an "example" theme in styles/theme for you) - like so:
+
+```js
+import React from "react"
+
+const Root = styled.button`
+  background-color: ${({ bgColor, theme }) => theme.color[bgColor]};
+
+  & > * + * {
+    margin-left: 8px;
+  }
+`
+
+const Button = ({ className, icon: Icon, label, onClick }) => {
+  return (
+    <Root bgColor="blue" onClick={onClick}>
+      {Icon ? <Icon /> : null}
+      <label>{label}</label>
+    </Root>
+  )
+}
+
+export default Button
+```
+
+or
+
+```js
+import React from "react"
+
+const Root = styled.button`
+  border-radius: ${({ rounded }) => (rounded ? 8 : 0)}px;
+
+  & > * + * {
+    margin-left: 8px;
+  }
+`
+
+const Button = ({ className, icon: Icon, label, onClick }) => {
+  return (
+    <Root rounded onClick={onClick}>
+      {Icon ? <Icon /> : null}
+      <label>{label}</label>
+    </Root>
+  )
+}
+
+export default Button
+```
