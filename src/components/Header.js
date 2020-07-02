@@ -1,7 +1,7 @@
 import React from "react"
-//components
-import { StyledAnchor1, StyledAnchor2, StyledAnchor3, StyledAnchor4, StyledAnchor5 } from 'components/AnchorLink'
-//styles
+
+import { StyledAnchor1, StyledAnchor2, StyledAnchor3, StyledAnchor4 } from '../StyledComponents/AnchorLink'
+
 import { NewHeader, HeaderH1 } from "styles/HeaderStyles"
 
 export default function Header() {
@@ -11,8 +11,7 @@ export default function Header() {
         <StyledAnchor1 label='About'/>
         <StyledAnchor2 label='Work'/>
         <StyledAnchor3 label='Skills'/>
-        <StyledAnchor4 label='Blog'/>
-        <StyledAnchor5 label='Contact'/>
+        <StyledAnchor4 label='Contact'/>
     </NewHeader>
   )
 }

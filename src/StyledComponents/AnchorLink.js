@@ -47,5 +47,3 @@ export const StyledAnchor2 = styled(AnchorLink)`
 export const StyledAnchor3 = StyledAnchor2
 
 export const StyledAnchor4 = StyledAnchor2;
-
-export const StyledAnchor5 = StyledAnchor2;
