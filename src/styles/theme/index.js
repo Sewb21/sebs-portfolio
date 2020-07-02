@@ -1,4 +1,3 @@
-/** This is the stream blog theme haha shhh */
 export default {
   borderRadius: 8,
   colors: {
@@ -10,7 +9,7 @@ export default {
     purple: "#AA00FF",
     red: "#D00234",
     dark_purple: "#6200EA",
-    gray: fade("#000000", 0.5),
+    // gray: fade("#000000", 0.5),
     dark_slate: "#171717",
     slate: "#263238",
     orange: "#F5A623",

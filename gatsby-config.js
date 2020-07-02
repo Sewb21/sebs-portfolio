@@ -1,11 +1,4 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
-
 module.exports = {
-  /* Your site config here */
   plugins: [
     `gatsby-plugin-layout`,
     `gatsby-plugin-styled-components`,
@@ -19,5 +12,13 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Open Sans`
+        ],
+        display: 'swap'
+      }},
   ],
 }
