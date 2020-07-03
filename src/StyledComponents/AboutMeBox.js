@@ -6,6 +6,8 @@ const Root = styled.article`
   font-size: 24px;
   background-color: #3aafa9;
   margin-top: 2px;
+  wdith: 100%;
+  height: 250px;
   & > span {
     font-weight: bold;
     margin: 0 40% 0 40%;
