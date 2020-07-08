@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import getDateString from 'utils/utils.js'
+import React from "react"
+import styled from "styled-components"
+import getDateString from "utils/utils.js"
 
 const Root = styled.article`
   font-size: 24px;
@@ -11,26 +11,22 @@ const Root = styled.article`
   & > span {
     font-weight: bold;
     margin: 0 40% 0 40%;
-    color: #FEFFFF;
+    color: #feffff;
     text-decoration: underline;
     font-size: 28px;
   }
   & > p {
     margin: 10px 20% 0 20%;
     font-size: 28px;
-    color: #17252A;
+    color: #17252a;
   }
-`;
+`
 
-const AboutMeBox = ({children}) => {
+const AboutMeBox = ({ children }) => {
   return (
     <Root>
-      <span>
-        {getDateString(new Date())}
-      </span>
-      <p>
-        {children}
-      </p>
+      <span>{getDateString(new Date())}</span>
+      <p>{children}</p>
     </Root>
   )
 }

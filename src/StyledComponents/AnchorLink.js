@@ -1,12 +1,12 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react"
+import styled from "styled-components"
 
-const AnchorLink = ({className, label}) => (
+const AnchorLink = ({ className, label }) => (
   <a href={`#${label}`} className={className}>
     <span>{label}</span>
     <span>|</span>
   </a>
-);
+)
 
 export const StyledAnchor1 = styled(AnchorLink)`
   color: white;
@@ -16,15 +16,15 @@ export const StyledAnchor1 = styled(AnchorLink)`
   margin-left: 50%;
   & > span:first-child {
     &:hover {
-      color: #17252A;
+      color: #17252a;
       font-size: 26px;
     }
   }
   & > span:last-child {
     color: black;
-    font-size: 24px
+    font-size: 24px;
   }
-  `;
+`
 
 export const StyledAnchor2 = styled(AnchorLink)`
   color: white;
@@ -34,16 +34,16 @@ export const StyledAnchor2 = styled(AnchorLink)`
   margin-left: 3px;
   & > span:first-child {
     &:hover {
-      color: #17252A;
+      color: #17252a;
       font-size: 26px;
     }
   }
   & > span:last-child {
     color: black;
-    font-size: 24px
+    font-size: 24px;
   }
-  `;
+`
 
 export const StyledAnchor3 = StyledAnchor2
 
-export const StyledAnchor4 = StyledAnchor2;
+export const StyledAnchor4 = StyledAnchor2

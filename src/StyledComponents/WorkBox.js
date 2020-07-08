@@ -1,29 +1,24 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const Root = styled.article`
   font-size: 24px;
-  background-color: #2B7A78;
-  margin-top: 2px;
+  background-color: #3aafa9;
+  margin: 0.5px 0 0 0;
   width: 100%;
-  height: 400px;
-  & > span {
-    font-weight: bold;
-    margin: 0 43% 0 43%;
-    color: #FEFFFF;
-    text-decoration: underline;
-    font-size: 28px;
-  }
- `;
+  height: 100%;
+`;
 
 const ImageRoot = styled.div`
-  margin: 0 0 0 20%;
+  margin: 0 0 0 10px;
   position: relative;
+
   & > img {
     height: 300px;
     width: 300px;
   }
-  & > article{
+
+  & > article {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -32,18 +27,12 @@ const ImageRoot = styled.div`
     height: 300px;
     width: 300px;
     opacity: 0;
-    transition: .5s ease;
-    background-color: #3AAFA9;
+    transition: 0.5s ease;
+    background-color: #2b7a78;
   }
-  & > article:hover {
-    opacity: 0.5;
-  }
-  & > article:hover & > span{
-    opacity: 1;
-    color: black;
-  }
-  & span:last-child{
-    color: #FEFFFF;
+
+  & span:last-child {
+    color: #feffff;
     font-size: 20px;
     position: absolute;
     top: 50%;
@@ -52,21 +41,37 @@ const ImageRoot = styled.div`
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+    opacity: 1;
+    text-decoration: underline;
+  }
+
+  &:hover > article {
+    opacity: 0.9;
+  }
+
+  &:hover > span {
+    opacity: 1;
   }
 `;
 
-export default function WorkBox({ children }) {
+export default function WorkBox({
+  className,
+  title,
+  imgSrc,
+  imgAlt,
+  jobRole,
+  jobDescription,
+}) {
   return (
     <Root>
-      <span>My Work</span>
-      <ImageRoot>
-        <img src={'https://filedn.com/lQJfVGhXSkSJSxgrjbFupmB/f4n_full.jpg'} alt='Favor-4-a-neighbour logo' />
+      <ImageRoot className={className}>
+        <img src={imgSrc} alt={imgAlt} />
         <article>
-          <span>
-          Favor For A Neighbour
-          </span>
+          <span>{title}</span>
         </article>
-      </ ImageRoot>
+      </ImageRoot>
+      <span>Job role: {jobRole}</span>
+      <p>What did the job entail? {jobDescription}</p>
     </Root>
-  )
+  );
 }
