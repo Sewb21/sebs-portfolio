@@ -7,50 +7,40 @@ const Root = styled.article`
   margin: 0.5px 0 0 0;
   width: 100%;
   height: 100%;
+  display: grid;
+  grid-template-columns: 400px 1000px;
 `;
 
 const ImageRoot = styled.div`
-  margin: 0 0 0 10px;
-  position: relative;
+  margin: 25px 0 0 10px;
 
   & > img {
-    height: 300px;
-    width: 300px;
+    height: 350px;
+    width: 350px;
+  }
+`;
+
+const JobDetailContainer = styled.div`
+  font-size: 22px;
+
+  & > p:first-child {
+    font-weight: bold;
   }
 
-  & > article {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 300px;
-    width: 300px;
-    opacity: 0;
-    transition: 0.5s ease;
-    background-color: #2b7a78;
+  & > p:nth-child(2) {
+    font-style: italic;
   }
 
-  & span:last-child {
-    color: #feffff;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-    opacity: 1;
+  & > a {
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+  }
+
+  & > a:hover {
     text-decoration: underline;
-  }
-
-  &:hover > article {
-    opacity: 0.9;
-  }
-
-  &:hover > span {
-    opacity: 1;
+    color: #feffff;
+    font-size: 24px;
   }
 `;
 
@@ -61,17 +51,24 @@ export default function WorkBox({
   imgAlt,
   jobRole,
   jobDescription,
+  technologies,
+  githubLink,
+  hostedLink,
 }) {
   return (
     <Root>
       <ImageRoot className={className}>
         <img src={imgSrc} alt={imgAlt} />
-        <article>
-          <span>{title}</span>
-        </article>
       </ImageRoot>
-      <span>Job role: {jobRole}</span>
-      <p>What did the job entail? {jobDescription}</p>
+      <JobDetailContainer>
+        <p>{title}</p>
+        <p>{jobRole}</p>
+        <p>{technologies}</p>
+        <p>{jobDescription}</p>
+        <a href={hostedLink}>{hostedLink}</a>
+        <br />
+        <a href={githubLink}>{githubLink}</a>
+      </JobDetailContainer>
     </Root>
   );
 }

@@ -9,17 +9,23 @@ module.exports = {
         aliases: {
           components: "./components",
           styles: "./styles",
-          utils: '../utils',
+          utils: "../utils",
         },
       },
     },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          `Open Sans`
-        ],
-        display: 'swap'
-      }},
+        fonts: [`Open Sans`],
+        display: "swap",
+      },
+    },
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        color: `#2b7a78;`,
+        showSpinner: false,
+      },
+    },
   ],
-}
+};
