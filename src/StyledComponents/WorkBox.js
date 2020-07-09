@@ -23,12 +23,10 @@ const ImageRoot = styled.div`
 const JobDetailContainer = styled.div`
   font-size: 22px;
 
-  & > p:first-child {
-    font-weight: bold;
-  }
-
-  & > p:nth-child(2) {
+  & > h3 {
     font-style: italic;
+    font-weight: 500;
+    font-size: 24px;
   }
 
   & > a {
@@ -61,8 +59,8 @@ export default function WorkBox({
         <img src={imgSrc} alt={imgAlt} />
       </ImageRoot>
       <JobDetailContainer>
-        <p>{title}</p>
-        <p>{jobRole}</p>
+        <h1>{title}</h1>
+        <h3>{jobRole}</h3>
         <p>{technologies}</p>
         <p>{jobDescription}</p>
         <a href={hostedLink}>{hostedLink}</a>

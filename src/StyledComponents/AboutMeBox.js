@@ -1,34 +1,17 @@
-import React from "react"
-import styled from "styled-components"
-import getDateString from "utils/utils.js"
+import React from "react";
+import styled from "styled-components";
 
-const Root = styled.article`
+const Root = styled.p`
   font-size: 24px;
   background-color: #3aafa9;
-  margin-top: 2px;
-  wdith: 100%;
-  height: 250px;
-  & > span {
-    font-weight: bold;
-    margin: 0 40% 0 40%;
-    color: #feffff;
-    text-decoration: underline;
-    font-size: 28px;
-  }
-  & > p {
-    margin: 10px 20% 0 20%;
-    font-size: 28px;
-    color: #17252a;
-  }
-`
+  height: 150px;
+  margin: 2px 20% 0 20%;
+  font-size: 28px;
+  color: #17252a;
+`;
 
 const AboutMeBox = ({ children }) => {
-  return (
-    <Root>
-      <span>{getDateString(new Date())}</span>
-      <p>{children}</p>
-    </Root>
-  )
-}
+  return <Root>{children}</Root>;
+};
 
-export default AboutMeBox
+export default AboutMeBox;

@@ -10,9 +10,9 @@ const Root = styled.article`
   width: 100%;
   height: 100%;
 
-  & > span {
+  & > h1 {
     font-weight: bold;
-    margin: 5% 43% 10px 43%;
+    margin: 2px 43% 10px 43%;
     color: #feffff;
     text-decoration: underline;
     font-size: 28px;
@@ -28,7 +28,7 @@ const ListWorkBox = styled(WorkBox)``;
 export default function Work() {
   return (
     <Root>
-      <span>My Work</span>
+      <h1>My Work</h1>
       <WorkBoxContainer>
         <ListWorkBox
           imgSrc="https://filedn.com/lQJfVGhXSkSJSxgrjbFupmB/f4n_full.jpg"
