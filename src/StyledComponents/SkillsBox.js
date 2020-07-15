@@ -4,9 +4,20 @@ import styled from "styled-components";
 const Root = styled.article`
   font-size: 24px;
   background-color: #3aafa9;
-  margin: 0.5px 0 0 0;
-  width: 100%;
+  margin: auto;
+  width: 50%;
   height: 100%;
+  padding: 0 0 20px 0;
+
+  & > h1 {
+    text-decoration: underline;
+  }
+
+  & > p {
+    font-style: italic;
+    margin: 10px 0 0 0px;
+    color: #feffff;
+  }
 `;
 
 export default function SkillsBox() {

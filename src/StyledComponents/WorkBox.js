@@ -52,6 +52,7 @@ export default function WorkBox({
   technologies,
   githubLink,
   hostedLink,
+  extraLink,
 }) {
   return (
     <Root>
@@ -66,6 +67,8 @@ export default function WorkBox({
         <a href={hostedLink}>{hostedLink}</a>
         <br />
         <a href={githubLink}>{githubLink}</a>
+        <br />
+        <a href={extraLink}>{extraLink}</a>
       </JobDetailContainer>
     </Root>
   );

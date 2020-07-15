@@ -1,12 +1,13 @@
-import React from "react"
-import styled from "styled-components"
+import React from "react";
+import styled from "styled-components";
+import { Link } from "gatsby";
 
 const AnchorLink = ({ className, label }) => (
-  <a href={`#${label}`} className={className}>
+  <Link to={`#${label}`} className={className}>
     <span>{label}</span>
     <span>|</span>
-  </a>
-)
+  </Link>
+);
 
 export const StyledAnchor1 = styled(AnchorLink)`
   color: white;
@@ -24,7 +25,7 @@ export const StyledAnchor1 = styled(AnchorLink)`
     color: black;
     font-size: 24px;
   }
-`
+`;
 
 export const StyledAnchor2 = styled(AnchorLink)`
   color: white;
@@ -42,8 +43,8 @@ export const StyledAnchor2 = styled(AnchorLink)`
     color: black;
     font-size: 24px;
   }
-`
+`;
 
-export const StyledAnchor3 = StyledAnchor2
+export const StyledAnchor3 = StyledAnchor2;
 
-export const StyledAnchor4 = StyledAnchor2
+export const StyledAnchor4 = StyledAnchor2;

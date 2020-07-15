@@ -1,22 +1,51 @@
-import React from "react"
-
+import React from "react";
+import githubLogo from "../../Logos/GitHub-Mark-32px.png";
+import linkedinLogo from "../../Logos/linkedin-logo.png";
 import {
   StyledAnchor1,
   StyledAnchor2,
   StyledAnchor3,
   StyledAnchor4,
-} from "../StyledComponents/AnchorLink"
+} from "../StyledComponents/AnchorLink";
+import styled from "styled-components";
 
-import { NewHeader, HeaderH1 } from "styles/HeaderStyles"
+const NewHeader = styled.header`
+  background-color: #3aafa9;
+  height: 100px;
+  display: flex;
 
-export default function Header() {
+  & > h1 {
+    color: #feffff;
+    margin: 0;
+    padding: 25px 5px 25px 5px;
+  }
+`;
+
+const ImageLink = styled.a`
+  & > img {
+    height: 25px;
+    width: 25px;
+    margin: 40px 0 0 5px;
+  }
+  & > img:hover {
+    height: 27px;
+    width: 27px;
+  }
+`;
+export default function Header({ githubLink, linkedinLink }) {
   return (
     <NewHeader>
-      <HeaderH1>Sebs Portfolio</HeaderH1>
+      <h1>Sebs Portfolio</h1>
       <StyledAnchor1 label="About" />
       <StyledAnchor2 label="Work" />
       <StyledAnchor3 label="Skills" />
       <StyledAnchor4 label="Contact" />
+      <ImageLink href={githubLink}>
+        <img src={githubLogo} />
+      </ImageLink>
+      <ImageLink href={linkedinLink}>
+        <img src={linkedinLogo} />
+      </ImageLink>
     </NewHeader>
-  )
+  );
 }
