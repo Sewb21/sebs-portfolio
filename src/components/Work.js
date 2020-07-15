@@ -27,7 +27,7 @@ const ListWorkBox = styled(WorkBox)``;
 
 export default function Work() {
   return (
-    <Root>
+    <Root id="Work">
       <h1>My Work</h1>
       <WorkBoxContainer>
         <ListWorkBox

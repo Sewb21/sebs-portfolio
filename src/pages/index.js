@@ -3,8 +3,8 @@ import Header from "components/Header";
 import AboutMe from "components/AboutMe";
 import Work from "components/Work";
 import Skills from "components/Skills";
-import Contact from "../components/Contact";
-
+import Contact from "components/Contact";
+import Footer from "components/Footer";
 export default function Home() {
   return (
     <>
@@ -16,6 +16,7 @@ export default function Home() {
       <Work />
       <Skills />
       <Contact />
+      <Footer />
     </>
   );
 }

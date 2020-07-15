@@ -19,7 +19,7 @@ const Root = styled.article`
 
 export default function Skills() {
   return (
-    <Root>
+    <Root id="Skills">
       <h1>Skills</h1>
       <SkillsBox />
     </Root>

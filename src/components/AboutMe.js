@@ -19,7 +19,7 @@ const Root = styled.article`
 
 export default function AboutMe() {
   return (
-    <Root>
+    <Root id="About">
       <h1>{getDateString(new Date())}</h1>
       <AboutMeBox>
         Hi I'm Seb! I am a Junior Software Developer, based near Manchester in

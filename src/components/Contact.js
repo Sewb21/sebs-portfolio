@@ -20,7 +20,7 @@ const Root = styled.article`
 
 export default function Contact() {
   return (
-    <Root>
+    <Root id="Contact">
       <h1>Contact</h1>
       <ContactBox label="Name:" value="Seb Smith" />
       <ContactBox

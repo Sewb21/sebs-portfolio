@@ -40,7 +40,7 @@ const AnchorContainer = styled.div`
 
 export default function Header({ githubLink, linkedinLink }) {
   return (
-    <NewHeader>
+    <NewHeader id="Header">
       <h1>Sebs Portfolio</h1>
       <AnchorContainer>
         <StyledAnchor1 label="About" />
@@ -48,10 +48,10 @@ export default function Header({ githubLink, linkedinLink }) {
         <StyledAnchor3 label="Skills" />
         <StyledAnchor4 label="Contact" />
         <ImageLink href={githubLink}>
-          <img src={githubLogo} />
+          <img src={githubLogo} alt="github logo" />
         </ImageLink>
         <ImageLink href={linkedinLink}>
-          <img src={linkedinLogo} />
+          <img src={linkedinLogo} alt="linkedin logo" />
         </ImageLink>
       </AnchorContainer>
     </NewHeader>
