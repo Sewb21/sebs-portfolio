@@ -32,20 +32,28 @@ const ImageLink = styled.a`
     width: 27px;
   }
 `;
+
+const AnchorContainer = styled.div`
+  display: flex;
+  margin: 0 20px 0 50%;
+`;
+
 export default function Header({ githubLink, linkedinLink }) {
   return (
     <NewHeader>
       <h1>Sebs Portfolio</h1>
-      <StyledAnchor1 label="About" />
-      <StyledAnchor2 label="Work" />
-      <StyledAnchor3 label="Skills" />
-      <StyledAnchor4 label="Contact" />
-      <ImageLink href={githubLink}>
-        <img src={githubLogo} />
-      </ImageLink>
-      <ImageLink href={linkedinLink}>
-        <img src={linkedinLogo} />
-      </ImageLink>
+      <AnchorContainer>
+        <StyledAnchor1 label="About" />
+        <StyledAnchor2 label="Work" />
+        <StyledAnchor3 label="Skills" />
+        <StyledAnchor4 label="Contact" />
+        <ImageLink href={githubLink}>
+          <img src={githubLogo} />
+        </ImageLink>
+        <ImageLink href={linkedinLink}>
+          <img src={linkedinLogo} />
+        </ImageLink>
+      </AnchorContainer>
     </NewHeader>
   );
 }
