@@ -4,19 +4,32 @@ import styled from "styled-components";
 const Root = styled.article`
   font-size: 24px;
   background-color: #3aafa9;
-  margin: auto;
-  width: 50%;
   height: 100%;
-  padding: 0 0 20px 0;
+  padding: 0 0 30px 0;
+  display: flex;
+  flex-direction: column;
 
   & > h1 {
     text-decoration: underline;
+    align-self: center;
   }
 
   & > p {
     font-style: italic;
     margin: 10px 0 0 0px;
     color: #feffff;
+    align-self: center;
+  }
+
+  @media only screen and (max-width: 475px) {
+    & > h1 {
+      font-size: 22px;
+    }
+
+    & > p {
+      font-size: 20px;
+      margin: 0 20px 0 20px;
+    }
   }
 `;
 

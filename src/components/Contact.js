@@ -5,16 +5,26 @@ import ContactBox from "../StyledComponents/ContactBox";
 const Root = styled.article`
   font-size: 24px;
   background-color: #3aafa9;
-  margin: 0.5px 0 0 0;
+  margin: 2px 0 0 0;
   width: 100%;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   & > h1 {
     font-weight: bold;
-    margin: 2px 43% 0 43%;
+    margin: 2px 0 0 0;
     color: #feffff;
     text-decoration: underline;
     font-size: 28px;
+    align-self: center;
+  }
+
+  @media only screen and (max-width: 475px) {
+    & > h1 {
+      margin: 10px 0 0 0;
+      font-size: 26px;
+    }
   }
 `;
 

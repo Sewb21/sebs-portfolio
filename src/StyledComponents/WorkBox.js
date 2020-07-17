@@ -71,7 +71,7 @@ const JobDetailContainer = styled.div`
     }
 
     & > p {
-      margin: 10px 7px 20px 7px;
+      margin: 10px 20px 20px 20px;
     }
   }
 `;

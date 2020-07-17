@@ -18,6 +18,18 @@ const Root = styled.div`
     text-decoration: underline;
     font-style: italic;
   }
+
+  @media only screen and (max-width: 475px) {
+    font-size: 12px;
+
+    & > p {
+      margin: 5px;
+    }
+
+    & > a {
+      margin: 5px;
+    }
+  }
 `;
 
 export default function Footer() {

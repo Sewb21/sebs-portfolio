@@ -22,12 +22,21 @@ const NewHeader = styled.header`
 
   @media only screen and (max-width: 475px) {
     width: 100%;
-    height: 100px;
+    height: 80px;
+    justify-content: space-between;
 
     & > h1 {
-      padding: 15px 5px 10px 5px;
       font-size: 24px;
     }
+  }
+`;
+
+const AnchorContainer = styled.div`
+  display: flex;
+  margin: 0 20px 0 50%;
+
+  @media only screen and (max-width: 475px) {
+    margin: 0 10px 0 0;
   }
 `;
 
@@ -42,16 +51,11 @@ const ImageLink = styled.a`
     height: 27px;
     width: 27px;
   }
-`;
-
-const AnchorContainer = styled.div`
-  display: flex;
-  margin: 0 20px 0 50%;
 
   @media only screen and (max-width: 475px) {
-    margin: 0 5px 0 0;
-    & > a {
-      font-size: 18px;
+    & > img {
+      align-self: center;
+      margin: 80% 10px 40% 0;
     }
   }
 `;

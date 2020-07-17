@@ -25,6 +25,10 @@ export const StyledAnchor1 = styled(AnchorLink)`
     color: black;
     font-size: 24px;
   }
+
+  @media only screen and (max-width: 475px) {
+    display: none;
+  }
 `;
 
 export const StyledAnchor2 = styled(AnchorLink)`
@@ -42,6 +46,10 @@ export const StyledAnchor2 = styled(AnchorLink)`
   & > span:last-child {
     color: black;
     font-size: 24px;
+  }
+
+  @media only screen and (max-width: 475px) {
+    display: none;
   }
 `;
 

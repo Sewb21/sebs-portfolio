@@ -13,7 +13,7 @@ const Root = styled.p`
     font-size: 18px;
     width: 100%;
     margin: 0;
-    padding: 0 5px 0 5px;
+    padding: 0 20px 0 20px;
   }
 `;
 

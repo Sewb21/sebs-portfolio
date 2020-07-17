@@ -29,6 +29,24 @@ const Root = styled.article`
     text-decoration: underline;
     font-size: 26px;
   }
+
+  @media only screen and (max-width: 475px) {
+    margin: 0;
+    width 100%;
+
+    & > h3 {
+      font-size: 22px;
+      margin-left: 10px;
+    }
+
+    & > p {
+      font-size: 18px;
+    }
+
+    & > a {
+      font-size: 16px;
+    }
+  }
 `;
 
 export default function ContactBox({ label, value, link }) {
