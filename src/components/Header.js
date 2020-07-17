@@ -19,6 +19,16 @@ const NewHeader = styled.header`
     margin: 0;
     padding: 25px 5px 25px 5px;
   }
+
+  @media only screen and (max-width: 475px) {
+    width: 100%;
+    height: 100px;
+
+    & > h1 {
+      padding: 15px 5px 10px 5px;
+      font-size: 24px;
+    }
+  }
 `;
 
 const ImageLink = styled.a`
@@ -27,6 +37,7 @@ const ImageLink = styled.a`
     width: 25px;
     margin: 40px 0 0 5px;
   }
+
   & > img:hover {
     height: 27px;
     width: 27px;
@@ -36,6 +47,13 @@ const ImageLink = styled.a`
 const AnchorContainer = styled.div`
   display: flex;
   margin: 0 20px 0 50%;
+
+  @media only screen and (max-width: 475px) {
+    margin: 0 5px 0 0;
+    & > a {
+      font-size: 18px;
+    }
+  }
 `;
 
 export default function Header({ githubLink, linkedinLink }) {

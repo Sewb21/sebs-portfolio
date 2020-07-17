@@ -6,16 +6,26 @@ import getDateString from "utils/utils.js";
 const Root = styled.article`
   font-size: 24px;
   background-color: #3aafa9;
-  margin: 2px 0 0 0;
-  wdith: 100%;
-  height: 250px;
+  margin-top: 2px;
+  width: 100%;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 
   & > h1 {
     font-weight: bold;
-    margin: 0 40% 15px 40%;
     color: #feffff;
     text-decoration: underline;
-    font-size: 28px;`;
+    font-size: 28px;
+    align-self: center;
+  }
+
+  @media only screen and (max-width: 475px) {
+    & > h1 {
+      font-size: 26px;
+    }
+  }
+`;
 
 export default function AboutMe() {
   return (

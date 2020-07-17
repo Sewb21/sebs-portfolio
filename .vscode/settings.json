@@ -1,3 +1,5 @@
 {
-  "editor.fontFamily": "'hack', monospace"
+  "editor.fontFamily": "'hack', monospace",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }

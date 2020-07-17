@@ -9,18 +9,27 @@ const Root = styled.article`
   margin: 0.5px 0 0 0;
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 
   & > h1 {
     font-weight: bold;
-    margin: 2px 43% 10px 43%;
     color: #feffff;
     text-decoration: underline;
     font-size: 28px;
+    align-self: center;
+  }
+
+  @media only screen and (max-width: 475px) {
+    & > h1 {
+      font-size: 26px;
+    }
   }
 `;
 
 const WorkBoxContainer = styled.div`
-  display: grid;
+  display: flex;
+  flex-direction: column;
 `;
 
 const ListWorkBox = styled(WorkBox)``;
