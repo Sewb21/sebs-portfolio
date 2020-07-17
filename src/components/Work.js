@@ -6,7 +6,7 @@ import sebsNewsLogo from "../images/Sebs-News.png";
 const Root = styled.article`
   font-size: 24px;
   background-color: #3aafa9;
-  margin: 0.5px 0 0 0;
+  margin: 2px 0 0 0;
   width: 100%;
   height: 100%;
   display: flex;
