@@ -13,7 +13,7 @@ const Root = styled.article`
 
   & > h1 {
     font-weight: bold;
-    margin: 2px 0 0 0;
+    margin: 20px 0 0 0;
     color: #feffff;
     text-decoration: underline;
     font-size: 28px;

@@ -8,6 +8,7 @@ export default {
     teal: "#00B8D4",
     purple: "#AA00FF",
     red: "#D00234",
+    dark_green: "#17252a",
     dark_purple: "#6200EA",
     // gray: fade("#000000", 0.5),
     dark_slate: "#171717",
@@ -19,4 +20,4 @@ export default {
     light_gray: "#EDEDED",
     white: "#ffffff",
   },
-}
+};

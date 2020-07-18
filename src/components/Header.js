@@ -1,62 +1,65 @@
 import React from "react";
+import { AccountIcon } from "components/Icon";
 import githubLogo from "../../Logos/GitHub-Mark-32px.png";
 import linkedinLogo from "../../Logos/linkedin-logo.png";
-import {
-  StyledAnchor1,
-  StyledAnchor2,
-  StyledAnchor3,
-  StyledAnchor4,
-} from "../StyledComponents/AnchorLink";
+import AnchorLink from "../StyledComponents/AnchorLink";
+import Container from "components/Container";
 import styled from "styled-components";
 
 const NewHeader = styled.header`
-  background-color: #17252a;
+  background-color: ${({ theme }) => theme.colors.dark_green};
   height: 100px;
   width: 100%;
+  box-shadow: 3px 3px 5px 6px #ccc;
+
+  & h1 {
+    color: #feffff;
+    margin: 0;
+    // padding: 25px 5px 25px 5px;
+  }
+
+  // @media only screen and (max-width: 475px) {
+  //   width: 100%;
+  //   height: 80px;
+  //   justify-content: space-between;
+
+  //   & > h1 {
+  //     font-size: 24px;
+  //   }
+  // }
+`;
+
+const Wrapper = styled(Container)`
+  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  box-shadow: 3px 3px 5px 6px #ccc;
-
-  & > h1 {
-    color: #feffff;
-    margin: 0;
-    padding: 25px 5px 25px 5px;
-  }
-
-  @media only screen and (max-width: 475px) {
-    width: 100%;
-    height: 80px;
-    justify-content: space-between;
-
-    & > h1 {
-      font-size: 24px;
-    }
-  }
+  align-items: center;
 `;
 
 const AnchorContainer = styled.div`
   display: flex;
-  margin: 0 20% 0 0;
-  @media only screen and (max-width: 475px) {
-    margin: 0 10px 0 0;
-  }
-
-  @media only screen and (max-width: 1000px) {
-    margin-right: auto;
-  }
+  align-items: center;
 `;
 
-const ImageLink = styled.a`
-  & > img {
+const ImageLinks = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 16px;
+
+  & > a > img {
     height: 25px;
     width: 25px;
-    margin: 40px 0 0 5px;
+    transition: 0.12s transform ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
-  & > img:hover {
-    height: 27px;
-    width: 27px;
+  & > a + a {
+    margin-left: 16px;
   }
 
   @media only screen and (max-width: 475px) {
@@ -65,27 +68,30 @@ const ImageLink = styled.a`
       margin: 80% 10px 40% 0;
     }
   }
-
-  @media only screen and (max-width: 1600px) {
-  }
 `;
+
+// TODO: Header text a lil smaller on mobile.
 
 export default function Header({ githubLink, linkedinLink }) {
   return (
     <NewHeader id="Header">
-      <h1>Sebs Portfolio</h1>
-      <AnchorContainer>
-        <StyledAnchor1 label="About" />
-        <StyledAnchor2 label="Work" />
-        <StyledAnchor3 label="Skills" />
-        <StyledAnchor4 label="Contact" />
-        <ImageLink href={githubLink}>
-          <img src={githubLogo} alt="github logo" />
-        </ImageLink>
-        <ImageLink href={linkedinLink}>
-          <img src={linkedinLogo} alt="linkedin logo" />
-        </ImageLink>
-      </AnchorContainer>
+      <Wrapper>
+        <h1>Sebs Portfolio</h1>
+        <AnchorContainer>
+          <AnchorLink label="About" />
+          <AnchorLink label="Work" />
+          <AnchorLink label="Skills" />
+          <AnchorLink label="Contact" />
+          <ImageLinks>
+            <a href={githubLink}>
+              <img src={githubLogo} alt="github logo" />
+            </a>
+            <a href={linkedinLink}>
+              <img src={linkedinLogo} alt="linkedin logo" />
+            </a>
+          </ImageLinks>
+        </AnchorContainer>
+      </Wrapper>
     </NewHeader>
   );
 }

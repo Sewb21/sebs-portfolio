@@ -5,7 +5,6 @@ const Root = styled.article`
   font-size: 24px;
   background-color: #17252a;
   height: 100%;
-  width: 50%;
   padding: 0 0 20px 0;
   display: flex;
   align-items: center;
@@ -26,7 +25,7 @@ const Root = styled.article`
   }
 
   & > a:hover {
-    color: black;
+    color: #3AAFA9;
     text-decoration: underline;
     font-size: 26px;
   }
