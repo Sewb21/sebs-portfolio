@@ -12,7 +12,10 @@ import styled from "styled-components";
 const NewHeader = styled.header`
   background-color: #3aafa9;
   height: 100px;
+  width: 100%;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
   & > h1 {
     color: #feffff;
@@ -33,10 +36,13 @@ const NewHeader = styled.header`
 
 const AnchorContainer = styled.div`
   display: flex;
-  margin: 0 20px 0 50%;
-
+  margin: 0 20% 0 0;
   @media only screen and (max-width: 475px) {
     margin: 0 10px 0 0;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    margin-right: auto;
   }
 `;
 
@@ -57,6 +63,9 @@ const ImageLink = styled.a`
       align-self: center;
       margin: 80% 10px 40% 0;
     }
+  }
+
+  @media only screen and (max-width: 1600px) {
   }
 `;
 
