@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Root = styled.article`
   font-size: 24px;
-  background-color: #3aafa9;
+  background-color: #17252a;
   height: 100%;
   padding: 0 0 30px 0;
   display: flex;
@@ -12,6 +12,7 @@ const Root = styled.article`
   & > h1 {
     text-decoration: underline;
     align-self: center;
+    color: #feffff;
   }
 
   & > p {

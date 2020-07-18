@@ -15,6 +15,7 @@ export const StyledAnchor1 = styled(AnchorLink)`
   align-self: center;
   text-decoration: none;
   margin-left: 50%;
+
   & > span:first-child {
     &:hover {
       color: #3aafa9;

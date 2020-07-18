@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Root = styled.article`
   font-size: 24px;
-  background-color: #3aafa9;
+  background-color: #17252a;
   height: 100%;
   width: 50%;
   padding: 0 0 20px 0;
@@ -13,6 +13,7 @@ const Root = styled.article`
 
   & > h3 {
     margin: 0 5px 0 0;
+    color: #feffff;
   }
 
   & > p {

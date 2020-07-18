@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Root = styled.article`
   font-size: 24px;
-  background-color: #3aafa9;
+  background-color: #17252a;
   margin: 2px 0 0 0;
   width: 100%;
   height: 100%;
@@ -45,12 +45,21 @@ const JobDetailContainer = styled.div`
     font-style: italic;
     font-weight: 500;
     font-size: 24px;
+    color: #feffff;
   }
 
   & > a {
     text-decoration: none;
-    color: black;
+    color: #feffff;
     font-style: italic;
+  }
+
+  & > p {
+    color: #feffff;
+  }
+
+  & > h1 {
+    color: #feffff;
   }
 
   & > a:hover {
