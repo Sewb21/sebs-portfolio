@@ -10,12 +10,13 @@ import {
 import styled from "styled-components";
 
 const NewHeader = styled.header`
-  background-color: #3aafa9;
+  background-color: #17252a;
   height: 100px;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  box-shadow: 3px 3px 5px 6px #ccc;
 
   & > h1 {
     color: #feffff;

@@ -5,7 +5,7 @@ import getDateString from "utils/utils.js";
 
 const Root = styled.article`
   font-size: 24px;
-  background-color: #3aafa9;
+  background-color: #feffff;
   margin-top: 2px;
   width: 100%;
   padding-bottom: 20px;
@@ -14,7 +14,7 @@ const Root = styled.article`
 
   & > h1 {
     font-weight: bold;
-    color: #feffff;
+    color: #17252a;
     text-decoration: underline;
     font-size: 28px;
     align-self: center;
