@@ -17,12 +17,12 @@ export const StyledAnchor1 = styled(AnchorLink)`
   margin-left: 50%;
   & > span:first-child {
     &:hover {
-      color: #17252a;
+      color: #3aafa9;
       font-size: 26px;
     }
   }
   & > span:last-child {
-    color: black;
+    color: #3aafa9;
     font-size: 24px;
   }
 
@@ -39,13 +39,14 @@ export const StyledAnchor2 = styled(AnchorLink)`
   margin-left: 3px;
   & > span:first-child {
     &:hover {
-      color: #17252a;
+      color: #3aafa9;
       font-size: 26px;
     }
   }
   & > span:last-child {
     color: black;
     font-size: 24px;
+    color: #3aafa9;
   }
 
   @media only screen and (max-width: 475px) {
