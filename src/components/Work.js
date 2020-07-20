@@ -51,6 +51,19 @@ const sebsNewsLinks = [
   },
 ];
 
+const f4nLinks = [
+  {
+    name: "Frontend Repo",
+    icon: GithubIcon,
+    url: "https://github.com/Sewb21/fe-F4N",
+  },
+  {
+    name: "Backend Repo",
+    icon: GithubIcon,
+    url: "https://github.com/Sewb21/be-F4N",
+  },
+];
+
 export default function Work() {
   return (
     <Root id="Work">
@@ -71,8 +84,7 @@ export default function Work() {
           ]}
           jobDescription="For the app Favour 4 a Neighbour I was placed on the Front End team and tasked with spiking React Native.
           I set up the React Navigation and also put together the Front End for the app whilst also touching parts of the Back End when setting up Firebase for the Authentication."
-          hostedLink="https://github.com/Sewb21/fe-F4N"
-          githubLink="https://github.com/Sewb21/be-F4N"
+          links={f4nLinks}
         />
         <ListWorkBox
           imgSrc={sebsNewsLogo}
