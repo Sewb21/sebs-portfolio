@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import TextGroup from "components/TextGroup";
+import React from "react"
+import styled from "styled-components"
+import TextGroup from "components/TextGroup"
 
 const Root = styled.article`
   font-size: 24px;
@@ -14,7 +14,7 @@ const Root = styled.article`
   @media (min-width: 475px) {
     flex-direction: row;
   }
-`;
+`
 
 const ImgWrapper = styled.div`
   max-width: 33.333333333%;
@@ -22,7 +22,7 @@ const ImgWrapper = styled.div`
   & img {
     width: 100%;
   }
-`;
+`
 
 const Content = styled.div`
   flex: 1 1 auto;
@@ -33,10 +33,10 @@ const Content = styled.div`
     font-weight: 700;
   }
 
-  @media screen only and (min-width: 476px) {
-    margin-left: 48px;
+  @media only screen and (min-width: 476px) {
+    margin-left: 60px;
   }
-`;
+`
 
 const TechGroup = styled(TextGroup)`
   & > div {
@@ -46,24 +46,18 @@ const TechGroup = styled(TextGroup)`
       margin-top: 4px;
     }
 
-    @media screen only and (min-width: 475px) {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-
+    @media only screen and (min-width: 475px) {
       & > * + * {
-        marrgin-top: 0px;
-        margin-left: 8px;
+        margin-top: 0px;
       }
     }
   }
-`;
+`
 
-// TODO: Media Queries - text size on mobile.
 const Desc = styled.p`
   font-size: 20px;
   line-height: 28px;
-`;
+`
 
 const Links = styled.div`
   display: flex;
@@ -95,7 +89,7 @@ const Links = styled.div`
       }
     }
   }
-`;
+`
 
 export default function WorkBox({
   className,
@@ -130,7 +124,7 @@ export default function WorkBox({
         {links && links.length ? (
           <Links>
             {links.map(({ icon: Icon, name, url }, key) => (
-              <a href={url}>
+              <a href={url} key={key}>
                 {Icon ? <Icon size={16} color="white" /> : null}
                 <span>{name}</span>
               </a>
@@ -139,5 +133,5 @@ export default function WorkBox({
         ) : null}
       </Content>
     </Root>
-  );
+  )
 }

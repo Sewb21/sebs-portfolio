@@ -1,5 +1,18 @@
-export { default } from "./Icon";
+export { default } from "./Icon"
 
-export { default as AccountIcon } from "./icons/account";
-export { default as GithubIcon } from "./icons/github";
-export { default as LinkIcon } from "./icons/link";
+export { default as AccountIcon } from "./icons/account"
+export { default as GithubIcon } from "./icons/github"
+export { default as LinkIcon } from "./icons/link"
+export { default as JavascriptIcon } from "./icons/jsIcon"
+export { default as NodeJSIcon } from "./icons/nodejs"
+export { default as HTMLIcon } from "./icons/html"
+export { default as CSSIcon } from "./icons/css"
+export { default as PSQLIcon } from "./icons/psql"
+export { default as GitIcon } from "./icons/git"
+export { default as YarnIcon } from "./icons/yarn"
+export { default as NPMIcon } from "./icons/npm"
+export { default as ReactIcon } from "./icons/react"
+export { default as ReactNativeIcon } from "./icons/reactNative"
+export { default as GatsbyIcon } from "./icons/gatsby"
+export { default as ExpressIcon } from "./icons/express"
+export { default as StyledComponentsIcon } from "./icons/styledComponents"

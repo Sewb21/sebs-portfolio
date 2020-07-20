@@ -1,5 +1,4 @@
 import React from "react";
-import { AccountIcon } from "components/Icon";
 import githubLogo from "../../Logos/GitHub-Mark-32px.png";
 import linkedinLogo from "../../Logos/linkedin-logo.png";
 import AnchorLink from "../StyledComponents/AnchorLink";
