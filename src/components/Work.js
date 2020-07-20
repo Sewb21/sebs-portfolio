@@ -1,16 +1,14 @@
-import React from "react";
-import WorkBox from "../StyledComponents/WorkBox";
-import styled from "styled-components";
-import sebsNewsLogo from "../images/Sebs-News.png";
-import Container from "components/Container";
-import { GithubIcon, LinkIcon } from "components/Icon";
+import React from "react"
+import WorkBox from "../StyledComponents/WorkBox"
+import styled from "styled-components"
+import sebsNewsLogo from "../images/Sebs-News.png"
+import Container from "components/Container"
+import { GithubIcon, LinkIcon } from "components/Icon"
 
 const Root = styled.article`
   font-size: 24px;
   background-color: #17252a;
   margin: 2px 0 0 0;
-  // width: 100%;
-  // height: 100%;
   display: flex;
   flex-direction: column;
 
@@ -27,11 +25,11 @@ const Root = styled.article`
       font-size: 26px;
     }
   }
-`;
+`
 
-const Wrapper = styled(Container)``;
+const Wrapper = styled(Container)``
 
-const ListWorkBox = styled(WorkBox)``;
+const ListWorkBox = styled(WorkBox)``
 
 const sebsNewsLinks = [
   {
@@ -49,7 +47,7 @@ const sebsNewsLinks = [
     icon: GithubIcon,
     url: "https://github.com/Sewb21/be-sebs-news",
   },
-];
+]
 
 const f4nLinks = [
   {
@@ -62,7 +60,7 @@ const f4nLinks = [
     icon: GithubIcon,
     url: "https://github.com/Sewb21/be-F4N",
   },
-];
+]
 
 export default function Work() {
   return (
@@ -97,5 +95,5 @@ export default function Work() {
         />
       </Wrapper>
     </Root>
-  );
+  )
 }

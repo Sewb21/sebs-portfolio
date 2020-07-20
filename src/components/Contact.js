@@ -1,6 +1,13 @@
-import React from "react";
-import styled from "styled-components";
-import ContactBox from "../StyledComponents/ContactBox";
+import React from "react"
+import styled from "styled-components"
+import ContactBox from "../StyledComponents/ContactBox"
+import {
+  GithubIcon,
+  LinkedInIcon,
+  MobileIcon,
+  EmailIcon,
+  PersonAtComputerIcon,
+} from "components/Icon"
 
 const Root = styled.article`
   font-size: 24px;
@@ -26,29 +33,32 @@ const Root = styled.article`
       font-size: 26px;
     }
   }
-`;
+`
+
+const myDetails = [
+  {
+    value: "Seb Smith",
+    icon: PersonAtComputerIcon,
+  },
+  { value: "seb-smith@live.com", icon: EmailIcon, url: "seb-smith@live.com" },
+  { value: "07904 107737", icon: MobileIcon },
+  {
+    value: "https://www.linkedin.com/in/seb-smith",
+    icon: LinkedInIcon,
+    url: "https://www.linkedin.com/in/seb-smith-34a20a1a6",
+  },
+  {
+    value: "https://github.com/Sewb21",
+    icon: GithubIcon,
+    url: "https://github.com/Sewb21",
+  },
+]
 
 export default function Contact() {
   return (
     <Root id="Contact">
       <h1>Contact</h1>
-      <ContactBox label="Name:" value="Seb Smith" />
-      <ContactBox
-        label="Email:"
-        value="seb-smith@live.com"
-        link={"seb-smith@live.com"}
-      />
-      <ContactBox label="Mobile:" value="07904 107737" />
-      <ContactBox
-        label="LinkedIn:"
-        value="https://www.linkedin.com/in/seb-smith"
-        link="https://www.linkedin.com/in/seb-smith-34a20a1a6"
-      />
-      <ContactBox
-        label="GitHub:"
-        value="https://github.com/Sewb21"
-        link="https://github.com/Sewb21"
-      />
+      <ContactBox details={myDetails} />
     </Root>
-  );
+  )
 }

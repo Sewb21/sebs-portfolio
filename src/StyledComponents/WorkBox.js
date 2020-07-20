@@ -57,6 +57,10 @@ const TechGroup = styled(TextGroup)`
 const Desc = styled.p`
   font-size: 20px;
   line-height: 28px;
+
+  @media only screen and (max-width: 475px) {
+    font-size: 18px;
+  }
 `
 
 const Links = styled.div`

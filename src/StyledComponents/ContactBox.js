@@ -1,68 +1,89 @@
-import React from "react";
-import styled from "styled-components";
+import React from "react"
+import styled from "styled-components"
 
 const Root = styled.article`
   font-size: 24px;
   background-color: #17252a;
   height: 100%;
-  padding: 0 0 20px 0;
+  padding-bottom: 20px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  margin: auto;
 
-  & > h3 {
-    margin: 0 5px 0 0;
-    color: #feffff;
+  & div {
+    display: flex;
+    flex-direction: row;
+    jusitfy-content: center;
+    align-items: center;
+    margin: 16px 0 16px 0;
   }
 
-  & > p {
-    color: #feffff;
+  & span {
+    color: white;
+    margin: 16px 0 16px 8px;
+    align-items: self;
   }
 
-  & > a {
+  & a {
     color: #feffff;
     text-decoration: none;
-  }
+    font-size: 24px;
+    margin-left: 8px;
 
-  & > a:hover {
-    color: #3AAFA9;
-    text-decoration: underline;
-    font-size: 26px;
+    & span {
+
+      & :hover {
+        color: #3aafa9;
+        text-decoration: underline;
+        0.12s all ease-in-out;
+      }
+    }
+
+    &:hover {
+      color: #3aafa9;
+
+      & svg {
+        fill: #3aafa9;
+        transition: 0.12s all ease-in-out;
+      }
+    }
   }
 
   @media only screen and (max-width: 475px) {
-    margin: 0;
-    width 100%;
+    font-size: 18px;
 
-    & > h3 {
-      font-size: 22px;
-      margin-left: 10px;
-    }
-
-    & > p {
+    & a {
       font-size: 18px;
     }
+  }
 
-    & > a {
+  @media only screen and (max-width: 380px) {
+    font-size: 16px;
+
+    & a {
       font-size: 16px;
     }
   }
-`;
+`
 
-export default function ContactBox({ label, value, link }) {
-  if (link) {
-    return (
-      <Root>
-        <h3>{label}</h3>
-        <a href={link}>{value}</a>
-      </Root>
-    );
-  }
-
+export default function ContactBox({ details }) {
   return (
     <Root>
-      <h3>{label}</h3>
-      <p>{value}</p>
+      {details.map(({ icon: Icon, value, url }, key) =>
+        url ? (
+          <div key={key}>
+            <a href={url}>
+              {Icon ? <Icon size={28} color="white" /> : null}
+              <span>{value}</span>
+            </a>
+          </div>
+        ) : (
+          <div key={key}>
+            {Icon ? <Icon size={28} color="white" /> : null}
+            <span>{value}</span>
+          </div>
+        )
+      )}
     </Root>
-  );
+  )
 }
