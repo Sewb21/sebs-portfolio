@@ -1,7 +1,7 @@
-import React from "react";
-import AboutMeBox from "../StyledComponents/AboutMeBox";
-import styled from "styled-components";
-import getDateString from "utils/utils.js";
+import React from "react"
+import AboutMeBox from "../StyledComponents/AboutMeBox"
+import styled from "styled-components"
+import getDateString from "utils/utils.js"
 
 const Root = styled.article`
   font-size: 24px;
@@ -11,13 +11,14 @@ const Root = styled.article`
   padding-bottom: 20px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   & > h1 {
     font-weight: bold;
     color: #17252a;
     text-decoration: underline;
     font-size: 28px;
-    align-self: center;
   }
 
   @media only screen and (max-width: 475px) {
@@ -25,7 +26,7 @@ const Root = styled.article`
       font-size: 26px;
     }
   }
-`;
+`
 
 export default function AboutMe() {
   return (
@@ -38,5 +39,5 @@ export default function AboutMe() {
         to get out into the working world and to add value to a company.
       </AboutMeBox>
     </Root>
-  );
+  )
 }
