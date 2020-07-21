@@ -18,7 +18,7 @@ const Root = styled.article`
     font-weight: bold;
     color: #17252a;
     text-decoration: underline;
-    font-size: 28px;
+    font-size: 30px;
   }
 
   @media only screen and (max-width: 475px) {

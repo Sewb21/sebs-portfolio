@@ -30,7 +30,7 @@ const Content = styled.div`
   color: white;
 
   & h3 {
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 700;
   }
 
