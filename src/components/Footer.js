@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from "react"
+import styled from "styled-components"
 
 const Root = styled.div`
   font-size: 15px;
@@ -21,7 +21,7 @@ const Root = styled.div`
 
   @media only screen and (max-width: 475px) {
     font-size: 12px;
-
+    padding-bottom: 8px;
     & > p {
       margin: 5px;
     }
@@ -30,7 +30,7 @@ const Root = styled.div`
       margin: 5px;
     }
   }
-`;
+`
 
 export default function Footer() {
   return (
@@ -38,5 +38,5 @@ export default function Footer() {
       <p>2020, Full Stack Software Developer based in Clitheroe, UK.</p>
       <a href="#Header">Back to top</a>
     </Root>
-  );
+  )
 }

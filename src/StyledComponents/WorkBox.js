@@ -18,6 +18,7 @@ const Root = styled.article`
 
 const ImgWrapper = styled.div`
   max-width: 33.333333333%;
+  flex-shrink: 0;
   width: 100%;
   & img {
     width: 100%;
@@ -41,9 +42,17 @@ const Content = styled.div`
 const TechGroup = styled(TextGroup)`
   & > div {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+
     & > * + * {
-      margin-top: 4px;
+      margin-left: 8px;
+    }
+
+    & svg {
+      fill: #d3d3d3;
+      width: 24px;
+      height: auto;
+      margin-top: 8px;
     }
 
     @media only screen and (min-width: 475px) {
@@ -103,7 +112,7 @@ export default function WorkBox({
   jobRole,
   jobDescription,
   links = [],
-  technologies,
+  technologies = [],
 }) {
   return (
     <Root>
@@ -119,8 +128,8 @@ export default function WorkBox({
         <TechGroup>
           <span>Technologies:</span>
           <div>
-            {technologies.map((tech, key) => (
-              <p key={key}>{tech}</p>
+            {technologies.map(({ icon: Icon }, key) => (
+              <div>{Icon ? <Icon size={16} color="white" /> : null}</div>
             ))}
           </div>
         </TechGroup>

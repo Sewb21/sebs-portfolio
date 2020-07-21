@@ -14,18 +14,17 @@ const NewHeader = styled.header`
   & h1 {
     color: #feffff;
     margin: 0;
-    // padding: 25px 5px 25px 5px;
   }
 
-  // @media only screen and (max-width: 475px) {
-  //   width: 100%;
-  //   height: 80px;
-  //   justify-content: space-between;
+  @media only screen and (max-width: 475px) {
+    width: 100%;
+    height: 80px;
+    justify-content: space-between;
 
-  //   & > h1 {
-  //     font-size: 24px;
-  //   }
-  // }
+    & h1 {
+      font-size: 24px;
+    }
+  }
 `
 
 const Wrapper = styled(Container)`
@@ -66,8 +65,6 @@ const ImageLinks = styled.div`
       align-self: center;
       margin: 80% 10px 40% 0;
     }
-
-    font-size: 24px;
   }
 `
 
