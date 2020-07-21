@@ -80,8 +80,8 @@ export default function Work() {
             "React Navigation",
             "React Native Elements",
           ]}
-          jobDescription="For the app Favour 4 a Neighbour I was placed on the Front End team and tasked with spiking React Native.
-          I set up the React Navigation and also put together the Front End for the app whilst also touching parts of the Back End when setting up Firebase for the Authentication."
+          jobDescription="For the app Favour 4 a Neighbour I worked on the Front End team so I was responsible for spiking React Native.
+          I set up the React Navigation and also put together the Front End for the app whilst also working with the Back End team to set up Firebase for the Authentication."
           links={f4nLinks}
         />
         <ListWorkBox
