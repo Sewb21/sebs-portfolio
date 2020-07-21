@@ -1,9 +1,9 @@
-import React from "react";
-import githubLogo from "../../Logos/GitHub-Mark-32px.png";
-import linkedinLogo from "../../Logos/linkedin-logo.png";
-import AnchorLink from "../StyledComponents/AnchorLink";
-import Container from "components/Container";
-import styled from "styled-components";
+import React from "react"
+import githubLogo from "../../Logos/GitHub-Mark-32px.png"
+import linkedinLogo from "../../Logos/linkedin-logo.png"
+import AnchorLink from "../StyledComponents/AnchorLink"
+import Container from "components/Container"
+import styled from "styled-components"
 
 const NewHeader = styled.header`
   background-color: ${({ theme }) => theme.colors.dark_green};
@@ -26,7 +26,7 @@ const NewHeader = styled.header`
   //     font-size: 24px;
   //   }
   // }
-`;
+`
 
 const Wrapper = styled(Container)`
   height: 100%;
@@ -34,12 +34,12 @@ const Wrapper = styled(Container)`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-`;
+`
 
 const AnchorContainer = styled.div`
   display: flex;
   align-items: center;
-`;
+`
 
 const ImageLinks = styled.div`
   display: flex;
@@ -66,8 +66,10 @@ const ImageLinks = styled.div`
       align-self: center;
       margin: 80% 10px 40% 0;
     }
+
+    font-size: 24px;
   }
-`;
+`
 
 // TODO: Header text a lil smaller on mobile.
 
@@ -92,5 +94,5 @@ export default function Header({ githubLink, linkedinLink }) {
         </AnchorContainer>
       </Wrapper>
     </NewHeader>
-  );
+  )
 }

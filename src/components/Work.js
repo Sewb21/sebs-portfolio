@@ -77,7 +77,7 @@ export default function Work() {
             "React Native",
             "Express.js",
             "Firebase",
-            "React Naivgation",
+            "React Navigation",
             "React Native Elements",
           ]}
           jobDescription="For the app Favour 4 a Neighbour I was placed on the Front End team and tasked with spiking React Native.
