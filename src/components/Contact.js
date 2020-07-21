@@ -40,7 +40,7 @@ const myDetails = [
     value: "Seb Smith",
     icon: PersonAtComputerIcon,
   },
-  { value: "seb-smith@live.com", icon: EmailIcon, url: "seb-smith@live.com" },
+  { value: "hello@sebsmith.dev", icon: EmailIcon, url: "hello@sebsmith.dev" },
   { value: "07904 107737", icon: MobileIcon },
   {
     value: "https://www.linkedin.com/in/seb-smith",
